@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+       <img class="meal_img" src="{{meals_details.image.url}}" alt=" ">
+       <h2>{{meals_details.name}}</h2>
+       <p>{{meals_details.description}}</p>
+       <p>People: {{meals_details.people}} </p>
+       <p>Preparation:{{meals_details.preparation_time}} mins</p>
+       <p>Price:${{meals_details.price}} </p>
+
+{% endblock body %}
+        
